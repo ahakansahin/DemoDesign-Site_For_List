@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo App</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="updating-menu">
+            <div class="updating-menu__header">
+                <h2>ToDo App</h2>
+            </div>
+            <div class="updating-menu__input">
+                <form>
+                    <input type="text" class="add-task" placeholder="Görev İsmini Yazınız">
+                    <button class="add-task-btn" type="submit">Ekle</button>
+                </form>
+                <div class="alert-empty-input">
+                    <i class="fa-solid fa-circle-exclamation"></i>Lütfen Görev İsmini Doldurun!
+                </div>
+            </div>
+        </div>
+        <div class="task-menu">
+            <div class="task-menu__header">
+                <div class="filtreler">
+                    <span class="filtre filtre-hepsi active">Hepsi</span>
+                    <span class="filtre filtre-yap">Yapılacaklar</span>
+                    <span class="filtre filtre-yapildi">Tamamlananlar</span>
+                </div>
+                <div class="temizle">
+                    <button type="button" class="btn-temizle">Temizle</button>
+                </div>
+            </div>
+            <div class="task-menu__task-list">
+
+                <ul class="task-list">
+
+                </ul>
+
+                <div class="state no-hepsi">
+                    Görev Listeniz Boş
+                </div>
+                <div class="state no-yap">
+                    Yapılacak Görev Bulunmuyor
+                </div>
+                <div class="state no-yapildi">
+                    Tamamlanmış Görev Bulunmuyor
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
